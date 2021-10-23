@@ -1,0 +1,43 @@
+.list {
+  list-style: none;
+  padding: 0;
+  padding: 10px 30px;
+  background: linear-gradient(to left, #f8ab8d 0%, white, #f8ab8d);
+  border-bottom: 1px solid grey;
+  color: #506a6b;
+  font-size: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+
+.contactList {
+  display: flex;
+  justify-content: space-between;
+}
+.contactsNameNumber {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.buttonDelete {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+
+  background: #161616;
+  border-color: rgba(255, 255, 255, 0.027451) #ff8c39
+    rgba(255, 255, 255, 0.027451) rgba(255, 255, 255, 0.027451);
+  border-style: solid;
+  border-width: 1px 4px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+  color: #555;
+  display: block;
+  width: 90px;
+  font-family: Open Sans, Sans-serif;
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+  line-height: 20px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+}

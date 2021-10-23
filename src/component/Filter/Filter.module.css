@@ -1,0 +1,35 @@
+.lfInput {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1em 2em;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: Open Sans, Arial, sans-serif;
+  text-shadow: 1px 1px 1px #232323;
+  border-radius: 25px;
+  background: green;
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #bc3220),
+    color-stop(100%, #fa5846)
+  );
+  background: -webkit-linear-gradient(top, green 0%, 100%);
+  background: linear-gradient(to bottom, green 0%, 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc3220', endColorstr='#fa5846', GradientType=0 );
+  outline: none;
+}
+
+.lf--input:focus {
+  outline: none;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}

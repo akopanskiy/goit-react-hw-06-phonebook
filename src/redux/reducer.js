@@ -11,10 +11,9 @@ const itemsState = JSON.parse(localStorage.getItem('contacts')) ?? [
 
 const items = createReducer(itemsState, {
   [actions.addContact]: (state, { payload }) =>
-    state.find(({ name }) => name !== payload.name)
-      ? [...state, payload]
-      : alert(`${payload.name} вже існує в телефонній книзі.`),
-
+    state.find(({ name }) => name === payload.name)
+      ? alert(`${payload.name} вже існує в телефонній книзі.`)
+      : [...state, payload],
   [actions.deleteContact]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
 });

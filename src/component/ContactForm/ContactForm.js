@@ -51,6 +51,7 @@ function ContactForm() {
               required
               onChange={handleChange}
               id={nameId}
+              autoComplete="off"
             />
           </div>
         </label>
@@ -67,6 +68,7 @@ function ContactForm() {
               required
               onChange={handleChange}
               id={numberId}
+              autoComplete="off"
             />
           </div>
         </label>
